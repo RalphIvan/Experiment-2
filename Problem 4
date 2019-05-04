@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	double firstNumber, secondNumber, thirdNumber;
+	
+	cout << "Enter first number: ";
+	cin >> firstNumber;
+	cout << "Enter second number: ";
+	cin >> secondNumber;
+	cout << "Enter third number: ";
+	cin >> thirdNumber;
+	cout << "\n";
+	
+	if (firstNumber < thirdNumber && secondNumber < thirdNumber)
+	{cout << "The LARGEST of the three numbers is " << thirdNumber << "." << endl;}
+	
+	else if (firstNumber < secondNumber && thirdNumber < secondNumber)
+	{cout << "The LARGEST of the three numbers is " << secondNumber << "." << endl;}
+	
+	else if (thirdNumber < firstNumber && secondNumber < firstNumber)
+	{cout << "The LARGEST of the three numbers is " << firstNumber << "." << endl;}
+	
+	else if (thirdNumber==firstNumber && thirdNumber > secondNumber)
+	{cout << "The LARGEST of the three numbers is " << thirdNumber << "." << endl;}
+	
+	else if (thirdNumber==secondNumber && thirdNumber > firstNumber)
+	{cout << "The LARGEST of the three numbers is " << thirdNumber << "." << endl;}
+	
+	else if (firstNumber==secondNumber && firstNumber > thirdNumber)
+	{cout << "The LARGEST of the three numbers is " << firstNumber << "." << endl;}
+	
+	else if (firstNumber==secondNumber && firstNumber==thirdNumber)
+	{cout << "The LARGEST of the three numbers is " << firstNumber << "." << endl;}
+	
+	return 0;
+		
+}
