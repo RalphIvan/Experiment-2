@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int row, column;
+   bool coaster = false;
+
+   do
+   { 
+
+   cout << "Enter number of rows: ";
+   cin >> row;
+   cout << "Enter number of column: ";
+   cin >> column;
+        
+     {
+     	for (int a=0; a < row; a++)
+     	  {
+     	  	cout << "\n*";
+     	  		for (int b = 1; b < column; b++)
+     	  			cout << "*";
+		   }
+	 }
+    cout << "\n\n";
+  }  while (!coaster);
+
+   return 0;
+}
