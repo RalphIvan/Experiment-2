@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+
+	double a,unpaidBalance,bill,bill2;
+	
+	cout << "Enter meter reading (in gallons):";
+	cin >> a;
+		
+	cout << "Enter unpaid balance:";
+	cin >> unpaidBalance;
+	
+	bill = (1.1*a) + 35;
+	bill2 = (1.1*a) + 35 + 20 + unpaidBalance;
+	
+		
+	if (unpaidBalance == 0)
+		{cout << "Water Bill: P" << bill;}
+	
+	else if (unpaidBalance > 0)
+		{cout << "Water Bill: P" << bill2;}
+	
+	
+	
+	return 0;
+}
