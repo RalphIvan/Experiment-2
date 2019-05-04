@@ -1,0 +1,60 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main ()
+
+{
+	double x,y,V;
+	const double z=2.5;
+	
+	cout << "Enter value of x:"; cin >> x;
+	cout << "Enter value of y:"; cin >> y;
+	
+	switch (x==1 && y)
+		{
+			case 1:
+			switch(x==1 && y>=5)
+			{
+				case 0:
+				V=x*y*z;
+				cout<< setw(10)<< fixed << setprecision(2) << "V = " << V << '\n';
+				break;
+				
+				case 1:
+				V=x+y/z;
+				cout<< setw(10)<< fixed << setprecision(2) << "V = " << V << '\n';
+				break;	
+			}
+			break;
+			
+					case 0:
+					switch (x==2 && y<=5)
+						{
+							case 1:
+							V=abs((x-y)/z);
+							cout<< setw(10)<< fixed << setprecision(2) << "V = " << V << '\n';
+				            break;
+				            	
+				            	case 0:
+				            	switch (x>2)
+				            	{
+				            		case 1:
+				            		V=x+y+z;
+				            		cout<< setw(10)<< fixed << setprecision(2) << "V = " << V << '\n';
+				                    break;
+				                    
+				                    	case 0:
+				                    	V=x-sqrt(y+z);
+				                    	cout<< setw(10)<< fixed << setprecision(2) << "V = " << V << '\n';
+				                        break;
+								}
+						}
+						
+			break;
+		}
+	
+	return 0;
+	
+}
